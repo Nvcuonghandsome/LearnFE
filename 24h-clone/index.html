@@ -6,14 +6,121 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>24h clone</title>
 </head>
 
 <body>
+    <div class="header">
+        <div class="header-container">
+            <div class="logo">
+                <img class="header-logo-img" src="https://cdn.24h.com.vn/images/2014/24h_logo_trang_chu_2015.png"
+                    alt="">
+            </div>
+            <div class="category">
+                <i class="fa-solid fa-bars header-logo-img"></i>
+                <p>Danh mục</p>
+                <ul class="sub-menu">
+                    <li>Trang chủ 24h</li>
+                    <li>Bóng đá</li>
+                    <li>Thế giới
+                        <ul class="sub-menu">
+                            <li>Điểm nóng</li>
+                            <li>Quân sự</li>
+                            <li>Thâm cung bí sử</li>
+                            <li>Chiến tranh Nga - Ukcraina</li>
+                        </ul>
+                    </li>
+                    <li>Pháp luật</li>
+                </ul>
+            </div>
+            <div class="football">
+                <img class="header-logo-img"
+                    src="https://icdn.24h.com.vn/upload/4-2018/images/2018-11-05/icons8-soccer-ball-96-copy-1541383138-270-width20height20.png"
+                    alt="">
+                <p>Bóng đá</p>
+                <ul class="sub-menu">
+                    <li>Champion League</li>
+                    <li>U23 Việt Nam</li>
+                    <li>World Cup
+                        <ul class="sub-menu">
+                            <li>Brazil có thể vô địch không?</li>
+                            <li>Pháp - Anh</li>
+                            <li>Messi có thể đạt quả báo vàng?</li>
+                            <li>Nhật Bản năm nay rất mạnh</li>
+                        </ul>
+                    </li>
+                    <li>V-League</li>
+                    <li>Hài bóng đá</li>
+                </ul>
+            </div>
+            <div class="business">
+                <img class="header-logo-img"
+                    src="https://icdn.24h.com.vn/upload/4-2018/images/2018-11-05/icons8-increase-96-copy-1541383138-358-width19height19.png"
+                    alt="">
+                <p>Kinh doanh</p>
+            </div>
+            <div class="health">
+                <img class="header-logo-img"
+                    src="https://icdn.24h.com.vn/upload/4-2018/images/2018-11-05/heartbeat1-1541383138-349-width20height18.png"
+                    alt="">
+                <p>Sức khỏe</p>
+            </div>
+            <div class="hi-tech">
+                <img class="header-logo-img"
+                    src="https://icdn.24h.com.vn/upload/4-2018/images/2018-11-05/icons8-smartphone-tablet-52-copy-1541383138-560-width20height20.png"
+                    alt="">
+                <p>Hi-tech</p>
+            </div>
+            <div class="world">
+                <img class="header-logo-img"
+                    src="https://icdn.24h.com.vn/upload/4-2018/images/2018-11-05/icons8-globe-962-1541383138-743-width20height20.png"
+                    alt="">
+                <p>thế giới</p>
+            </div>
+            <div class="sport">
+                <img class="header-logo-img"
+                    src="https://icdn.24h.com.vn/upload/1-2020/images/2020-01-17/thethao-1579244755-985-width20height22.png"
+                    alt="">
+                <p>thể thao</p>
+            </div>
+            <div class="premier-league">
+                <img class="header-logo-img"
+                    src="https://icdn.24h.com.vn/upload/3-2021/images/2021-08-16/nha_icon-1629109485-345-width23height23.png"
+                    alt="">
+                <p>ngoại hạng anh</p>
+            </div>
+            <div class="entertainment">
+                <img class="header-logo-img"
+                    src="https://icdn.24h.com.vn/upload/1-2022/images/2022-02-14/giaitri-1541403843-696-width20height20-1644810348-714-width20height20.png"
+                    alt="">
+                <p>giải trí</p>
+            </div>
+            <div class="calendar">
+                <img class="header-logo-img"
+                    src="https://icdn.24h.com.vn/upload/1-2021/images/2021-02-22/xem-lich-1613962271-733-width25height25.png"
+                    alt="">
+                <p>xem lịch</p>
+            </div>
+            <div class="magazine">
+                <img class="header-logo-img"
+                    src="https://icdn.24h.com.vn/upload/1-2022/images/2022-03-21/logo_icon-25x25px--1647851648-464-width25height25.png"
+                    alt="">
+                <p>magazine</p>
+            </div>
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" class="search-input" placeholder="Nhập nội dung cần tìm">
+            </div>
+        </div>
+
+    </div>
     <div class="container">
         <div class="content-left">
             <div class="left">
-                <ul class="header">
+                <ul class="title-header">
                     <li class="active-title">Tin tức trong ngày</li>
                     <li>Nóng trên mạng</li>
                     <li>Nhịp sống 24h</li>
@@ -39,7 +146,7 @@
                 </ul>
             </div>
             <div class="right">
-                <ul class="header">
+                <ul class="title-header">
                     <li class="active-title">Bóng đá</li>
                     <li>Thể thao</li>
                     <li>Video</li>
@@ -68,7 +175,7 @@
                 </ul>
             </div>
             <div class="left">
-                <ul class="header">
+                <ul class="title-header">
                     <li class="active-title">Kinh doanh</li>
                     <li>Tài chính</li>
                     <li>Bất động sản</li>
@@ -94,7 +201,7 @@
                 </ul>
             </div>
             <div class="right">
-                <ul class="header">
+                <ul class="title-header">
                     <li class="active-title">Thời trang</li>
                     <li>Bí quyết mặc đẹp</li>
                     <li>Người mẫu - Hoa hậu</li>
@@ -123,7 +230,7 @@
                     class="advert-img" alt="xe o to thanh ly">
             </div>
             <div class="right">
-                <ul class="header">
+                <ul class="title-header">
                     <li class="active-title">Thế giới</li>
                     <li>Thâm cung bí sử</li>
                     <li>Quân sự</li>
@@ -154,7 +261,7 @@
                 </ul>
             </div>
             <div class="left">
-                <ul class="header">
+                <ul class="title-header">
                     <li class="active-title">Pháp luật</li>
                     <li>Vụ án nổi tiếng</li>
                     <li>Trọng án</li>
@@ -180,7 +287,7 @@
                 </ul>
             </div>
             <div class="right">
-                <ul class="header">
+                <ul class="title-header">
                     <li class="active-title">Thị trường tiêu dùng</li>
                     <li>Giá cả</li>
                     <li>Đắt độc lạ</li>
@@ -208,8 +315,7 @@
                 <h4 class="video-title">video chọn lọc</h4>
                 <div class="video-line"></div>
                 <div class="video-left">
-                    <iframe width="380" height="240" 
-                        src="https://www.youtube.com/embed/jo5kNnobP9o"
+                    <iframe width="380" height="240" src="https://www.youtube.com/embed/jo5kNnobP9o"
                         title="YouTube video player" f rameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
@@ -220,34 +326,52 @@
                 <div class="video-right">
                     <ul class="other-videos-list">
                         <li>
-                            <iframe width="150" height="75" src="https://www.youtube.com/embed/Myxg2E8zUPw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe width="150" height="75" src="https://www.youtube.com/embed/Myxg2E8zUPw"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
                             <p>Bán hơn 1 triệu vé, phim "Em và Trịnh" vẫn nhận tin buồn</p>
                         </li>
                         <li>
-                            <iframe width="150" height="75" src="https://www.youtube.com/embed/Myxg2E8zUPw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe width="150" height="75" src="https://www.youtube.com/embed/Myxg2E8zUPw"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
                             <p>Chú rể đón dâu bằng chiếc xe độc nhất vô nhị khiến dân tình bực cười</p>
                         </li>
                         <li>
-                            <iframe width="150" height="75" src="https://www.youtube.com/embed/Myxg2E8zUPw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe width="150" height="75" src="https://www.youtube.com/embed/Myxg2E8zUPw"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
                             <p>Sắp đấu đội tuyển Pháp, HLV Mai Đức Chung lại có những phát biểu gây sốc</p>
                         </li>
                         <li>
-                            <iframe width="150" height="75" src="https://www.youtube.com/embed/Myxg2E8zUPw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe width="150" height="75" src="https://www.youtube.com/embed/Myxg2E8zUPw"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
                             <p>Video tay không khuất phục hổ mang chúa</p>
                         </li>
                         <li>
-                            <iframe width="150" height="75" src="https://www.youtube.com/embed/Myxg2E8zUPw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe width="150" height="75" src="https://www.youtube.com/embed/Myxg2E8zUPw"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
                             <p>Nữ hoàng bơi lội giành HCV, chơi chán đối thủ còn chưa về kịp</p>
                         </li>
                         <li>
-                            <iframe width="150" height="75" src="https://www.youtube.com/embed/Myxg2E8zUPw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe width="150" height="75" src="https://www.youtube.com/embed/Myxg2E8zUPw"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
                             <p>Chelsea săn Richardlison thay Lukaku, MU mua Ekriksen chơi tấn công tổng l</p>
                         </li>
                     </ul>
                 </div>
             </div>
             <div class="left">
-                <ul class="header">
+                <ul class="title-header">
                     <li class="active-title">Pháp luật</li>
                     <li>Vụ án nổi tiếng</li>
                     <li>Trọng án</li>
@@ -273,7 +397,7 @@
                 </ul>
             </div>
             <div class="right">
-                <ul class="header">
+                <ul class="title-header">
                     <li class="active-title">Thị trường tiêu dùng</li>
                     <li>Giá cả</li>
                     <li>Đắt độc lạ</li>
@@ -298,7 +422,7 @@
                 </ul>
             </div>
             <div class="left">
-                <ul class="header">
+                <ul class="title-header">
                     <li class="active-title">Pháp luật</li>
                     <li>Vụ án nổi tiếng</li>
                     <li>Trọng án</li>
@@ -324,7 +448,7 @@
                 </ul>
             </div>
             <div class="right">
-                <ul class="header">
+                <ul class="title-header">
                     <li class="active-title">Ô tô</li>
                     <li>Tin tức ô tô</li>
                     <li>Giá xe</li>
@@ -336,7 +460,8 @@
                         src="https://icdn.24h.com.vn/upload/2-2022/images/2022-06-22/120x90/av-1655896504-220-width740height555.jpg"
                         alt="tân binh MU">
                     <div class="content-detail">
-                        <p>Chiếc xe gầm cao Ford Territory hoàn toàn mới vừa bị bắt gặp khi đang chạy thử tại Việt Nam.</p>
+                        <p>Chiếc xe gầm cao Ford Territory hoàn toàn mới vừa bị bắt gặp khi đang chạy thử tại Việt Nam.
+                        </p>
                         <span>Ford Territory</span>
                     </div>
                 </div>
@@ -352,29 +477,32 @@
             </div>
 
             <div class="bottom-news">
-                <ul class="header">
+                <ul class="title-header">
                     <li class="active-title">Ẩm thực</li>
                     <li>Thực đơn hằng ngày</li>
                     <li>Clip ẩm thực</li>
                 </ul>
                 <div class="bottom-news-left">
-                    <img src="https://icdn.24h.com.vn/upload/2-2022/images/2022-06-24/medium/1656064197-956-thumbnail-width740height555.jpg" alt="">
+                    <img src="https://icdn.24h.com.vn/upload/2-2022/images/2022-06-24/medium/1656064197-956-thumbnail-width740height555.jpg"
+                        alt="">
                 </div>
                 <div class="bottom-news-right">
                     <h5 class="bottom-news-right-title">
                         Hướng dẫn làm món thịt lợn luộc theo cách mới, lạ miệng, đãi khách cực ngon</h5>
-                    <p class="bottom-news-right-des">Luộc thịt lợn theo cách này làm món đãi khách cực thơm ngon, đảm bảo ai cũng thích mê.</p>
+                    <p class="bottom-news-right-des">Luộc thịt lợn theo cách này làm món đãi khách cực thơm ngon, đảm
+                        bảo ai cũng thích mê.</p>
                     <span>Mẹo vặt nấu ăn</span>
                     <ul class="bottom-news-right-list">
                         <li>Gan lợn đừng chỉ làm sạch bằng nước, đây mới là cách làm chuẩn nhất</li>
                         <li>4 món "sạch" nhất nhà hàng, người sành ăn nhất định sẽ chọn</li>
                         <li>Ớt - ăn thế nào để có tác dụng tốt cho sức khỏe?</li>
-                        <li>Những sai lầm tai hại khi rửa trái cây và rau quả vừa mất hết chất vừa "rước độc vào người"</li>
+                        <li>Những sai lầm tai hại khi rửa trái cây và rau quả vừa mất hết chất vừa "rước độc vào người"
+                        </li>
                     </ul>
                 </div>
-                
+
             </div>
-            
+
         </div>
         <div class="content-right">
             <div class="market-news">
@@ -479,35 +607,43 @@
             <!-- <div class="company-info-line"></div> -->
             <ul class="company-info-list">
                 <li>
-                    <img src="https://icdn.24h.com.vn/upload/2-2022/images/2022-06-23/thumbnail/09-1655978433-294-width740height555.jpg" alt="">
+                    <img src="https://icdn.24h.com.vn/upload/2-2022/images/2022-06-23/thumbnail/09-1655978433-294-width740height555.jpg"
+                        alt="">
                     <p>Nhiếp ảnh gia Jinoo Khánh - Hãy không ngừng nhiệt huyết, thành công sẽ mỉm cười với bạn</p>
                 </li>
                 <li>
-                    <img src="https://icdn.24h.com.vn/upload/2-2022/images/2022-06-21/thumbnail/av-1655805291-207-width740height555.jpg" alt="">
+                    <img src="https://icdn.24h.com.vn/upload/2-2022/images/2022-06-21/thumbnail/av-1655805291-207-width740height555.jpg"
+                        alt="">
                     <p>Đánh thức khát vọng siêu chiến binh - Lễ "Kick off" diễn ra tại Quy Nhơn</p>
                 </li>
                 <li>
-                    <img src="https://icdn.24h.com.vn/upload/2-2022/images/2022-06-22/thumbnail/av-1655868570-599-width740height555.jpg" alt="">
+                    <img src="https://icdn.24h.com.vn/upload/2-2022/images/2022-06-22/thumbnail/av-1655868570-599-width740height555.jpg"
+                        alt="">
                     <p>Du lịch Quảng Bình cất cánh nhờ biểu tượng nghỉ dưỡng độc đáo</p>
                 </li>
                 <li>
-                    <img src="https://icdn.24h.com.vn/upload/2-2022/images/2022-06-24/thumbnail/av-1656052125-852-width740height555.jpg" alt="">
+                    <img src="https://icdn.24h.com.vn/upload/2-2022/images/2022-06-24/thumbnail/av-1656052125-852-width740height555.jpg"
+                        alt="">
                     <p>Nhận lương ăn gì cho bỏ công cả tháng chạy deadline</p>
                 </li>
                 <li>
-                    <img src="https://icdn.24h.com.vn/upload/2-2022/images/2022-06-24/thumbnail/av-1656034435-760-width740height555.jpg" alt="">
+                    <img src="https://icdn.24h.com.vn/upload/2-2022/images/2022-06-24/thumbnail/av-1656034435-760-width740height555.jpg"
+                        alt="">
                     <p>Thủ phạm gây ung thư dạ dày là 2 thói quen nhiều người có</p>
                 </li>
                 <li>
-                    <img src="https://icdn.24h.com.vn/upload/2-2022/images/2022-06-23/thumbnail/0-1655968071-936-width740height555.jpg" alt="">
+                    <img src="https://icdn.24h.com.vn/upload/2-2022/images/2022-06-23/thumbnail/0-1655968071-936-width740height555.jpg"
+                        alt="">
                     <p>Hợp chất Fucoidadn và khả năng chống ưng thư cực tốt</p>
                 </li>
                 <li>
-                    <img src="https://icdn.24h.com.vn/upload/2-2022/images/2022-06-23/thumbnail/0-1655968071-936-width740height555.jpg" alt="">
+                    <img src="https://icdn.24h.com.vn/upload/2-2022/images/2022-06-23/thumbnail/0-1655968071-936-width740height555.jpg"
+                        alt="">
                     <p>Chơi dễ hơn - quà nhiều hơn từ Timezone</p>
                 </li>
                 <li>
-                    <img src="https://icdn.24h.com.vn/upload/2-2022/images/2022-06-23/thumbnail/av-1655970898-338-width740height555.jpg" alt="">
+                    <img src="https://icdn.24h.com.vn/upload/2-2022/images/2022-06-23/thumbnail/av-1655970898-338-width740height555.jpg"
+                        alt="">
                     <p>Hướng đi cho bất động sản Lâm Đồng trước nhu cầu tăng cao</p>
                 </li>
             </ul>
@@ -525,26 +661,26 @@
                     <li>Bóng đá</li>
                     <li>Video</li>
                     <li>Ngoại hạng Anh</li>
-                </ul> 
+                </ul>
                 <ul class="footer-news-list">
                     <li>Thời trang</li>
                     <li>Bí quyết mặc đẹp</li>
                     <li>Người mẫu nữ</li>
-                </ul> 
+                </ul>
                 <ul class="footer-news-list">
                     <li>Pháp luật</li>
                     <li>Vụ án nổi tiếng</li>
                     <li>Trọng án</li>
-                </ul> 
+                </ul>
                 <ul class="footer-news-list">
                     <li>Hi-tech</li>
                     <li>Tin tức công nghệ</li>
-                </ul> 
+                </ul>
                 <ul class="footer-news-list">
                     <li>Kinh doanh</li>
                     <li>Khởi nghiệp</li>
                     <li>Tỷ giá</li>
-                </ul> 
+                </ul>
                 <ul class="footer-news-list">
                     <li>Sức khỏe</li>
                     <li>Bệnh đàn ông</li>
@@ -558,9 +694,14 @@
             <li>Đầu trang</li>
             <li>LIÊN HỆ QUẢNG CÁO</li>
         </ul>
-        <div class="footer-info">Cơ quan chủ quản: Công ty Cổ phần Quảng cáo Trực tuyến 24H Trụ sở: Tầng 12, Tòa nhà Geleximco, 36 Hoàng Cầu, Phường Ô Chợ Dừa, Quận Đống Đa, TP Hà Nội. Tel: (84-24) 73 00 24 24 hoặc (84-24) 3512 1806 - Fax: (84-24) 3512 1804. Chi nhánh: Tầng 7, Tòa nhà Việt Úc, 402 Nguyễn Thị Minh Khai, Phường 5, Quận 3, TP. Hồ Chí Minh. Tel: (84-28) 7300 2424 / Giấy phép số 332/GP – TT ĐT ngày cấp 22/01/2018 SỞ THÔNG TIN VÀ TRUYỀN THÔNG HÀ NỘI. Chịu trách nhiệm xuất bản: Phan Minh Tâm. HOTLINE: 0965 08 24 24</div>
+        <div class="footer-info">Cơ quan chủ quản: Công ty Cổ phần Quảng cáo Trực tuyến 24H Trụ sở: Tầng 12, Tòa nhà
+            Geleximco, 36 Hoàng Cầu, Phường Ô Chợ Dừa, Quận Đống Đa, TP Hà Nội. Tel: (84-24) 73 00 24 24 hoặc (84-24)
+            3512 1806 - Fax: (84-24) 3512 1804. Chi nhánh: Tầng 7, Tòa nhà Việt Úc, 402 Nguyễn Thị Minh Khai, Phường 5,
+            Quận 3, TP. Hồ Chí Minh. Tel: (84-28) 7300 2424 / Giấy phép số 332/GP – TT ĐT ngày cấp 22/01/2018 SỞ THÔNG
+            TIN VÀ TRUYỀN THÔNG HÀ NỘI. Chịu trách nhiệm xuất bản: Phan Minh Tâm. HOTLINE: 0965 08 24 24</div>
         <div class="footer-logo">
-            <img src="https://icdn.24h.com.vn/js/js_outsite/dmca_protected_sml_120m.png?ID=beadc7dd-b150-496e-948e-fdb97a8bf1f0" alt="">
+            <img src="https://icdn.24h.com.vn/js/js_outsite/dmca_protected_sml_120m.png?ID=beadc7dd-b150-496e-948e-fdb97a8bf1f0"
+                alt="">
         </div>
     </div>
 </body>
