@@ -332,6 +332,7 @@
 .books {
     width: 1100px;
     margin: 30px auto;
+    position: relative;
 }
 
 .books-header {
@@ -361,6 +362,7 @@
     list-style: none;
     width: 100%;
     margin-top: 20px;
+    position: relative;
 }
 
 .books-list>li {
@@ -391,6 +393,125 @@
     padding: 8px;
 }
 
-.books-list>li:first-child {
-    position: relative;
+.arrow button:hover {
+    cursor: pointer;
+}
+
+.arrow-left {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid #c8cbd0;
+    z-index: 1;
+    top: 60%;
+    left: -16px;
+}
+
+.arrow-right {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid #c8cbd0;
+    z-index: 1;
+    top: 60%;
+    right: -16px;
+}
+
+/* news */
+.news {
+    width: 1100px;
+    margin: 20px auto;
+}
+
+ul.news-list {
+    width: 780px;
+    list-style: none;
+    /* float: left; */
+}
+
+li.news-list-item {
+    float: left;
+    padding: 15px 0;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+}
+
+li.news-list-item img {
+    width: 258px;
+    height: 172px;
+    float: left;
+    margin-right: 20px;
+}
+
+li.news-list-item h3 {
+    font-size: 26px;
+    color: #333;
+}
+
+li.news-list-item p {
+    color: #888;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+/* news right */
+
+.news-right {
+    width: 300px;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.news-right-ads img {
+    width: 100%;
+    height: 600px;
+}
+
+/* read most */
+.read-most {
+    width: 300px;
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #f0f0f0;
+}
+
+p.read-most-title {
+    font-size: 25px;
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+ul.read-most-list {
+    list-style: none;
+}
+
+ul.read-most-list li {
+    margin: 20px 0;
+}
+
+ul.read-most-list li p:nth-child(2) {
+    font-size: 10px;
+    color: #666;
+    margin-left: 4px;
+    margin-bottom: 8px;
+}
+
+ul.read-most-list li p:nth-child(3) {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+}
+
+ul.read-most-list li img {
+    width: 72px;
+    height: 72px;
+    border-radius: 3px;
+    object-fit: cover;
+    float: left;
+    margin-right: 12px;
 }
