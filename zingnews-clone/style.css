@@ -6,12 +6,12 @@
 
 .banner {
     height: 280px;
-
 }
 
 .banner img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 /* header */
@@ -430,6 +430,8 @@
 ul.news-list {
     width: 780px;
     list-style: none;
+    /* đóng gói block lại, k ảnh hưởng bên dưới */
+    display: inline-block;
 }
 
 li.news-list-item {
@@ -465,7 +467,8 @@ li.news-list-item p {
 .news-right {
     width: 300px;
     display: inline-block;
-    margin-left: 20px;
+    vertical-align: top;
+    margin-left: 14px;
 }
 
 .news-right-ads img {
@@ -585,8 +588,7 @@ ul.podcast-list li img {
 /* lifestyle */
 .lifestyle {
     width: 1100px;
-    /* display: inline-block; */
-    margin: 140px auto;
+    margin: 30px auto;
 }
 
 .lifestyle-header {
@@ -705,11 +707,14 @@ ul.lifestyle-right-list>li>img {
 
 .banner-ad {
     width: 970px;
-    margin: 30px auto;
+    display: block;
+    margin: 0px auto;
 }
 
 .banner-ad>img {
     width: 100%;
+    margin: 30px 0;
+    display: inline-block;
     height: 250px;
 }
 
