@@ -200,11 +200,12 @@
 }
 
 .content-left li p {
-    overflow: hidden;
+    /* các thuộc tính này làm lòi ra ngoài */
+    /* overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 3; */
 }
 
 .content-middle {
@@ -1203,7 +1204,7 @@ ul.footer-list li p span:not(:last-child) {
 
     .content-left {
         width: 40%;
-        margin-left: 2%;
+        /* margin-left: 2%; */
         margin-right: 0;
         float: right;
     }
@@ -1218,8 +1219,7 @@ ul.footer-list li p span:not(:last-child) {
     }
 
     .content-right {
-        width: 58%;
-        float: left;
+        width: 100%;
         display: flex;
         justify-content: space-between;
         margin-left: 0;
@@ -1269,6 +1269,12 @@ ul.footer-list li p span:not(:last-child) {
     }
 
     .news-right {
+        display: none;
+    }
+
+    /* books */
+    .arrow-left,
+    .arrow-right {
         display: none;
     }
 
@@ -1324,29 +1330,12 @@ ul.footer-list li p span:not(:last-child) {
 
     /* other news */
     .other-news {
-        max-width: 1100px;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        margin: 30px auto;
-        border-top: 2px solid #000;
-    }
-
-    ul.other-news-list {
-        list-style: none;
-        width: 23%;
-        display: inline-block;
-        vertical-align: top;
-    }
-
-    /* other news */
-    .other-news {
         display: inline-block;
     }
 
     ul.other-news-list {
         width: 48%;
-        float: left;
+        /* float: left; */
     }
 
     ul.other-news-list:nth-child(even) {
@@ -1380,11 +1369,13 @@ ul.footer-list li p span:not(:last-child) {
     }
 
     .magazine-arrow-right {
-        right: -2%;
+        display: none;
+        /* right: -2%; */
     }
 
     .magazine-arrow-left {
-        left: -2%;
+        display: none;
+        /* left: -2%; */
     }
 
     /* video */
@@ -1451,14 +1442,6 @@ ul.footer-list li p span:not(:last-child) {
         height: 280px;
     }
 
-    /* ul.bottom-news-list li h5,
-    ul.bottom-news-list li p {
-        overflow: hidden;
-        text-overflow: ellipsis;
-        display: -webkit-box;
-        -webkit-box-orient: vertical;
-        -webkit-line-clamp: 1;
-    } */
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------- */
@@ -1522,10 +1505,6 @@ ul.footer-list li p span:not(:last-child) {
         width: 100%;
     }
 
-    ul.lifestyle-left-list li:last-child {
-        margin-left: 1%;
-    }
-
     ul.lifestyle-right-list {
         width: 100%;
     }
@@ -1536,6 +1515,11 @@ ul.footer-list li p span:not(:last-child) {
 
     ul.lifestyle-right-list li p {
         width: 100%;
+    }
+
+    /* other-news */
+    ul.other-news-list:nth-child(even) {
+        float: unset;
     }
 
     /* magazine */
@@ -1571,5 +1555,64 @@ ul.footer-list li p span:not(:last-child) {
         flex-direction: column;
         align-items: center;
         text-align: center;
+    }
+}
+
+/* MOBILE SIZE <= 400 px */
+@media only screen and (max-width: 400px) {
+    .content {
+        padding: 2%;
+    }
+
+    .lifestyle {
+        padding: 2%;
+    }
+
+    /* other-news */
+    .other-news {
+        padding: 2%;
+    }
+
+    /* books */
+    .books {
+        padding: 2%;
+    }
+
+    .books-list li {
+        display: none;
+    }
+
+    .books-list li:first-child {
+        display: block;
+        width: 100%;
+    }
+
+    .books-list li:first-child img {
+        height: 80%;
+    }
+
+    /* news */
+    .news {
+        padding: 2%;
+    }
+
+    /* magazine */
+    ul.magazine-list li {
+        display: none;
+    }
+
+    ul.magazine-list li:first-child {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .magazine-container>h3 {
+        margin-left: 5%;
+    }
+
+    /* bottom-news */
+    ul.bottom-news-list {
+        padding: 2%;
     }
 }
