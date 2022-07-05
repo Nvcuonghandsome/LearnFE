@@ -259,7 +259,6 @@
     font-weight: 600;
     margin-right: 20px;
     vertical-align: top;
-
 }
 
 .multimedia-title li:first-child {
@@ -704,6 +703,8 @@ ul.lifestyle-right-list>li>img {
     border-radius: 3px;
     float: right;
 }
+
+/* banner-ad */
 
 .banner-ad {
     width: 970px;
