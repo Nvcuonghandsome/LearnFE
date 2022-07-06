@@ -48,6 +48,7 @@
     list-style: none;
     position: relative;
     padding-left: 0;
+    margin-bottom: 6rem;
 }
 
 .about-list::before {
@@ -104,6 +105,28 @@
     margin-top: 12%;
 }
 
+#team {
+    background-color: rgba(248, 249, 250, 1) !important;
+}
+
+.member img {
+    width: 14rem;
+    height: 14rem;
+    border: 0.5rem solid rgba(0, 0, 0, 0.1);
+}
+
+.social-media button {
+    height: 2.5rem;
+    width: 2.5rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* ----------------------------------------------------------- */
+
 @media only screen and (max-width: 1216px) {
     .about-item .img {
         width: 150px;
@@ -117,6 +140,11 @@
 }
 
 @media only screen and (max-width: 1008px) {
+
+    .about-list {
+        margin-bottom: 0;
+    }
+
     .about-item .img {
         width: 100px;
         height: 100px;
@@ -126,9 +154,12 @@
     .about-item:last-child .img h5 {
         font-size: 14px;
     }
+
+
 }
 
 @media only screen and (max-width: 768px) {
+
     .about-list::before {
         left: 40px;
     }
