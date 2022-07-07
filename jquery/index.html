@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <style>
+        .red-bg {
+            background-color: red;
+        }
+
+        .active {
+            background-color: gold;
+        }
+    </style>
+    <script>
+        // $('document').ready(function () {
+        //     $('button.add').click(function () {
+        //         $('h1').addClass('red-bg')
+
+        //         // $('button.add').hide()
+        //     })
+
+        //     $('button.remove').click(function () {
+        //         // $('h1').removeClass('red-bg')
+        //         // $('button.add').show()
+        //         var check = $('h1').hasClass('red-bg');
+        //         if (check) {
+        //             $('h1').removeClass('red-bg')
+        //         } else {
+        //             $('h1').addClass('red-bg')
+        //         }
+        //     })
+        // })
+
+        // bai 1
+        // $('document').ready(function () {
+        //     $('#a-tag').click(function () {
+        //         var check = $('#a-tag').hasClass('active');
+        //         if (check) {
+        //             $('#a-tag').removeClass('active');
+        //         }
+        //         else {
+        //             $('#a-tag').addClass('active')
+        //         }
+        //     })
+        // })
+
+        // bai 2
+        $('document').ready(function () {
+            $('a').click(function () {
+                var check = $('a').hasClass('active');
+                if (check) {
+                    $('a').removeClass('active');
+                    $('p').hide();
+                } else {
+                    $('a').addClass('active');
+                    $('p').show();
+                }
+            })
+        })
+    </script>
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <h1>Learn JQuery</h1>
+    <button class="add">Add</button>
+    <button class="remove">Remove</button> -->
+    <a id="a-tag" href="#">Click me!</a>
+    <p>Learn jquery</p>
+</body>
+
+</html>
