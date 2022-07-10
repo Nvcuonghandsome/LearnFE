@@ -1,0 +1,160 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <title>Document</title>
+    <style>
+        .form {
+            width: 500px;
+            text-align: center;
+            margin: 30px auto;
+            padding: 10px;
+            border: 2px solid #333;
+        }
+
+        .form h2 {
+            color: #78b43d;
+        }
+
+        .form input {
+            width: 200px;
+        }
+
+        .form tr {
+            height: 30px;
+        }
+
+        .form tr td:first-child {
+            text-align: right;
+            padding-right: 8px;
+        }
+
+        .form button {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 20px;
+            padding: 8px 16px;
+            color: #fff;
+            background-color: #78b43d;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .form button:hover {
+            opacity: 0.8;
+        }
+    </style>
+    <script>
+        $('document').ready(function () {
+            $('form').submit(function () {
+
+                var getName = $('input#name').val()
+                if (getName == '') {  
+                    alert('Vui lòng nhập tên của bạn')
+                    return false
+                }
+
+                var getEmail = $('input#email').val()
+                if (getEmail == '') {
+                    alert('Vui lòng nhập email của bạn')
+                    return false
+                }
+
+                var getPhone = $('input#phone').val()
+                if (getPhone == '') {
+                    alert('Vui lòng nhập sđt của bạn')
+                    return false
+                }
+
+                var getAddress = $('input#address').val()
+                if (getAddress == '') {
+                    alert('Vui lòng nhập địa chỉ của bạn')
+                    return false
+                }
+
+                var getTitle = $('input#title').val()
+                if (getTitle == '') {
+                    alert('Vui lòng nhập tiêu đề của bạn')
+                    return false
+                }
+
+                var getContent = $('textarea#content').val()
+                if (getContent == '') {
+                    alert('Vui lòng nhập nội dung của bạn')
+                    return false
+                }
+
+                return true
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <div class="form">
+        <form action="https://www.24h.com.vn/">
+            <h2>GÓP Ý - LIÊN HỆ VỚI CHỦ SHOP</h2>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <b>Họ và tên</b>
+                        </td>
+                        <td>
+                            <input type="text" id="name">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b>Địa chỉ email</b>
+                        </td>
+                        <td>
+                            <input type=" email" id="email">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b>Số điện thoại</b>
+                        </td>
+                        <td>
+                            <input type="number" id="phone">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b>Địa chỉ nơi cư trú</b>
+                        </td>
+                        <td>
+                            <input type="text" id="address">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b>Tiêu đề</b>
+                        </td>
+                        <td>
+                            <input type="text" id="title" placeholder="Góp ý chủ shop">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b>Nội dung</b>
+                        </td>
+                        <td>
+                            <textarea name="" id="content" rows="10" cols="30"></textarea>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <button type="submit">Gửi</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
