@@ -68,8 +68,11 @@
 				if (isSubmit == false) {
 					return false
 				} else {
-					pass = up_pass_confirm
-					return true
+					emailUp = up_mail
+					passUp = up_pass_confirm
+					$('p#agree').text('Dang ky thanh cong')
+					// return true
+					return false
 				}
 			})
 
@@ -83,18 +86,38 @@
 				if (in_mail == '') {
 					$('p.enter_mail').text('Vui long nhap email')
 					isLogin = false
-				} else {
-					$('p.enter_mail').text('')
+				}
+				else {
+					// Xac thuc email
+					if (in_mail != emailUp) {
+						$('p.enter_mail').text('Email khong dung')
+						isLogin = false
+					} else {
+						$('p.enter_mail').text('')
+					}
 				}
 
 				if (in_pass == '') {
 					$('p.enter_pass').text('Vui long nhap password')
 					isLogin = false
-				} else {
-					$('p.enter_pass').text('')
+				}
+				else {
+					// Xac thuc mat khau
+					if (in_pass != passUp) {
+						$('p.enter_pass').text('Mat khau khong dung')
+						isLogin = false
+					} else {
+						$('p.enter_pass').text('')
+					}
 				}
 
+				if (isLogin) {
+					$('p.enter_pass').text('Dang nhap thanh cong')
+					// return true
+					return false
+				}
 
+				return false
 			})
 		})
 	</script>
@@ -205,7 +228,7 @@
 		<div class="container container-footer">
 			<div class="sign-in">
 				<span>SIGN IN</span>
-				<form id="in" action="home.html">
+				<form id="in">
 					<input type="text" id="in_mail" name="" placeholder="Your Email...">
 					<p class="enter_mail"></p>
 					<input type="password" id="in_pass" name="" placeholder="Your Password...">

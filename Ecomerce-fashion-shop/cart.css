@@ -4,11 +4,10 @@
 
 #cart table {
     width: 100%;
-    /* border-collapse: collapse;
+    border-collapse: collapse;
     table-layout: fixed;
-    white-space: nowrap; */
+    white-space: nowrap;
 }
-
 
 #cart table thead {
     border-bottom: 1px solid #e2e9e1;
@@ -30,6 +29,7 @@
     width: 150px;
 }
 
+
 #cart table td:nth-child(1) {
     width: 100px;
 }
@@ -41,4 +41,8 @@
 #cart table td:nth-child(5) input {
     width: 70px;
     padding: 10px 5px 10px 15px;
+}
+
+#cart table tbody tr td {
+    padding-top: 15px;
 }
