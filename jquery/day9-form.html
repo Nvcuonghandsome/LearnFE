@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <style type="text/css">
+        .demo {
+            background-color: red;
+        }
+    </style>
+
+    <!-- lam jquery thi goi thu vien cua no vap -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('form').submit(function () {
+
+                var getSelect = $('select').val()
+                var getCheckbox = $('input#checkbox').is(':checked')
+                var demo = 1;
+
+                if (getSelect == '') {
+                    $('p.p1').text('Vui long chon gioi tinh')
+                    demo = 2
+                } else {
+                    $('p.p1').text('')
+                }
+
+                if (getCheckbox == false) {
+                    $('p.p2').text('Vui long check')
+                    demo = 2
+                } else {
+                    $('p.p2').text('')
+                }
+
+                if (demo == 1) {
+                    return true
+                }
+                return false
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <form action="https://www.24h.com.vn/">
+        <select>
+            <option value="">vui long chon</option>
+            <option value="1">male</option>
+            <option value="2">female</option>
+        </select>
+        <p class="p1"></p>
+
+        <input style="display: block;" type="checkbox" id="checkbox" name="">
+        <p class="p2"></p>
+
+        <button type="submit">click</button>
+    </form>
+</body>
+
+</html>

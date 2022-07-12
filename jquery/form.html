@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <style type="text/css">
+        form {
+            width: 500px;
+            text-align: center;
+            margin: 30px auto;
+            padding: 10px;
+            border: 2px solid #333;
+        }
+
+        form input {
+            width: 200px;
+        }
+
+        form tr {
+            height: 30px;
+        }
+
+        form tr td:first-child {
+            text-align: right;
+            padding-right: 8px;
+        }
+
+        form button {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 20px;
+            padding: 8px 16px;
+            color: #fff;
+            background-color: #78b43d;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            opacity: 0.8;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $('form').submit(function () {
+                var getName = $('input.name').val()
+                var getEmail = $('input.email').val()
+                var getPass = $('input.pass').val()
+                var getAddress = $('input.address').val()
+                var getTitle = $('input.title').val()
+                var getContent = $('textarea').val()
+
+                if (getName == '') {
+                    $('p.p1').text('Vui long nhap ten')
+                } else {
+                    $('p.p1').text('')
+                }
+
+                if (getEmail == '') {
+                    $('p.p2').text('Vui long nhap email')
+                } else {
+                    $('p.p2').text('')
+                }
+
+                if (getPass == '') {
+                    $('p.p3').text('Vui long nhap mat khau')
+                } else {
+                    $('p.p3').text('')
+                }
+
+                if (getAddress == '') {
+                    $('p.p4').text('Vui long nhap dia chi')
+                } else {
+                    $('p.p4').text('')
+                }
+
+                if (getTitle == '') {
+                    $('p.p5').text('Vui long nhap tieu de')
+                } else {
+                    $('p.p5').text('')
+                }
+
+                if (getContent == '') {
+                    $('p.p6').text('Vui long nhap noi dung')
+                } else {
+                    $('p.p6').text('')
+                }
+
+                if (getName != '' && getEmail != '' && getPass != '' && getAddress != ''
+                    && getTitle != '' && getContent != '') {
+                    return true
+                }
+                return false
+            })
+        })
+    </script>
+</head>
+
+<body>
+
+    <form action="https://www.24h.com.vn/">
+
+        <input type="text" name="" class="name" placeholder="Your name">
+        <p class="p1"></p>
+
+        <input type="email" name="" class="email" placeholder="Your email">
+        <p class="p2"></p>
+
+        <input type="password" name="" class="pass" placeholder="Your password">
+        <p class="p3"></p>
+
+        <input type="text" class="address" placeholder="Your address">
+        <p class="p4"></p>
+
+        <input type="text" class="title" placeholder="Your title">
+        <p class="p5"></p>
+
+        <textarea cols="30" rows="10" placeholder="Your content"></textarea>
+        <p class="p6"></p>
+
+        <button type="submit">submit</button>
+    </form>
+
+</body>
+
+</html>
