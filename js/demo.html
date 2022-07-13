@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -6,81 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
-    <!-- javascript: tinh toan -->
     <script type="text/javascript">
-
-        // de khai bao 1 bien dung VAR
-        //bien va so thi k dat trong dau "", vi dat trong dau "" thi tro thanh 1 chuoi
-        var x = 2;
-        var y = 2;
-
-        tong = x + y;
-        // alert: hien thi thong bao len man hinh
-        // alert(tong)
-
-        // console.log: hien thi thong len thanh console, danh cho lap trinh vien xem ket qua
-
-        // console.log(tong)
-
-        // 1 so bieu thuc so sanh trong if else:
-        // ==, !=, &&, ||, *, / , >, >=,<,<=
-        // %
-        // dau + : de noi 1 chuoi va 1 bien
-
-        if (tong % 2 == 0) {
-            // alert("day la so chan " + tong)
-        } else {
-            // alert("day la so le")
+        let arr = [1, 2, 3, 4, 5]
+        // Tinh tong bang vong for
+        let sumFor = 0
+        for (let i = 0; i < arr.length; i++) {
+            sumFor += arr[i]
         }
-
-        // chu y: 
-        // - cau lenh if else co the long vao nhau nhieu lan, va trong lenh if 
-        // - co the chua' nhieu dk
-
-        // if( tong % 2 == 0 && tong > 4){
-        //   alert("so nay la so chan va > 4")
-
-        // }else if( tong % 2 == 0 && tong <= 4){
-
-        //   alert("so nay la so chan va <= 4")
-
-        // }else if( tong % 2 != 0 && tong > 4){
-
-        //   alert("so nay la so le va > 4")
-
-        // }else if( tong % 2 != 0 && tong < 4){
-
-        //   alert("so nay la so le va < 4")
-        // }
-
-        // co 1 sotu nhien N, viet ham kiem tra: 
-        // neu so nay > 100: kiem tra tiep la so chan hay so le
-        // neu so nay < 100: kiem tra tiep la so chan hay so le
-
-        var n = 99;
-        if (n > 100) {
-            if (n % 2 == 0) {
-                alert("day la so chan > 100")
-            } else {
-                alert("day la so le > 100")
-            }
-        } else {
-            if (n % 2 == 0) {
-                alert("day la so chan < 100")
-            } else {
-                alert("day la so le < 100")
-            }
-        }
-
-
-
-
+        console.log('Tong bang vong for la: ', sumFor)
+        // Tinh tong bang map
+        let sumMap = 0
+        arr.map(item => sumMap += item)
+        console.log('Tong bang map la: ', sumMap)
     </script>
 </head>
 
 <body>
-
+    <h1>Learn JS Array</h1>
 </body>
 
 </html>
