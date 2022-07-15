@@ -1,0 +1,26 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var obj3 = localStorage.getItem('obj1')
+        if (obj3) {
+            obj3 = JSON.parse(obj3)
+            Object.keys(obj3).map(key => {
+                console.log(key + ':' + obj3[key])
+            })
+
+            delete obj3['laptop']
+
+            localStorage.setItem('obj1', JSON.stringify(obj3))
+        }
+    </script>
+</body>
+
+</html>

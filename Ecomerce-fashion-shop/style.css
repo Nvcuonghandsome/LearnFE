@@ -745,3 +745,51 @@ footer .copyright {
 }
 
 /* ----------------------------------------------------------------------------------------------------------------------- */
+/* search */
+/* #search {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+}
+
+#search input {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px;
+}
+
+#search i {
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+#search-container {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    background-color: #ccc;
+    top: 100px;
+    left: 20%;
+    z-index: 100;
+}
+
+#search-container .product-container {
+    width: 100%;
+    overflow-y: scroll;
+
+}
+
+#search-container .product-container .product {
+    width: 100%;
+}
+
+.product-container .product img {
+    width: 100px;
+} */

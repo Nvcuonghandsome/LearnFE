@@ -1,0 +1,152 @@
+<!-- Tao 1 form có 2 input: username và email
+
+- click submit form thi lấy 2 value trên dua vao objCon,
+(nhớ kiêm tra xem user va email da nhap chua, chứa thi báo lỗi, ok hết thi đưa vào objCon)
+
+sau do dua objCon vao objCha nhu sau
+{
+'baovic': {
+'xx': 'baovic'
+'yy': 'ac@gmail.com'
+},
+}
+nhap tiep lan 2 thi them vao objcha nhu sau:
+{
+'baovic': {
+'xx': 'baovic'
+'yy': 'ac@gmail.com'
+},
+‘namihuong’: {
+'xx': 'namihuong'
+'yy': 'ac@gmail.com'
+}
+}
+
+tuong tu lan 3:
+{
+'baovic': {
+'xx': 'baovic'
+'yy': 'ac@gmail.com'
+},
+‘namihuong’: {
+'xx': 'namihuong'
+'yy': 'ac@gmail.com'
+},
+nam: {
+'xx': 'nam'
+'yy': 'ac@gmail.com'
+}
+}
+
+
+GOI Y:
+
+Lấy "xx" va "yy" làm key của objCon như sau:
+{
+'xx': 'baovic'
+'yy': 'ac@gmail.com'
+}
+và lây chinh objcon này đưa vào objCha va dùng value cua username làm key khi dua
+
+vao objCha = {
+'baovic': {
+'xx': 'baovic'
+'yy': 'ac@gmail.com'
+}
+}
+
+sau đó dua vao localstroage để giữ lại. -->
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>localStorage</title>
+    <style>
+        div {
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            width: 500px;
+        }
+
+        input {
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        button {
+            width: 100px;
+            padding: 10px 0;
+        }
+
+        p {
+            color: red;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div>
+        <input id="user" type="text" placeholder="Enter username">
+        <p id="user-err"></p>
+
+        <input id="email" type="text" placeholder="Enter email">
+        <p id="email-err"></p>
+
+        <button type="submit">Submit</button>
+    </div>
+
+    <script>
+        $('document').ready(function () {
+            $('button').click(function () {
+                var user = $('input#user').val()
+                var userErr = $('#user-err')
+
+                var email = $('#email').val()
+                var emailErr = $('#email-err')
+
+                var isSubmit = true
+
+                if (user == '') {
+                    userErr.text('Vui long nhap user')
+                    isSubmit = false
+                } else {
+                    userErr.text('')
+                }
+
+                if (email == '') {
+                    emailErr.text('Vui long nhap email')
+                    isSubmit = false
+                } else {
+                    emailErr.text('')
+                }
+
+                if (isSubmit) {
+
+                    var objCha = {}
+                    var getObj = localStorage.getItem('objCha')
+                    if (getObj) {
+                        objCha = JSON.parse(getObj)
+                    }
+                    objCha[user] = JSON.stringify({
+                        'xx': user,
+                        'yy': email
+                    })
+                    localStorage.setItem('objCha', JSON.stringify(objCha))
+
+                    userErr.text('')
+                    emailErr.text('')
+                    location.reload()
+                }
+            })
+        })
+    </script>
+</body>
+
+</html>
