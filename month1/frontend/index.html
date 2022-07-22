@@ -1147,11 +1147,24 @@
 			// Cart display on a tag 4 => index 3
 			var cart = $('.fa-shopping-cart').closest('.navbar-nav').find('.cart-num')
 			var cartNum = 0
+			var getObjCha = localStorage.getItem('objCha')
+			if (getObjCha) {
+				getObjCha = JSON.parse(getObjCha)
+				Object.keys(getObjCha).map(key => {
+					var value = JSON.parse(getObjCha[key])
+					var qty = parseInt(value['qty'])
+					cartNum += qty
+				})
+				if (cartNum > 0) {
+					cart.text(cartNum)
+				} else {
+					cart.text('')
+				}
+			}
 
 			$('a.add-to-cart').click(function () {
 				cartNum++
 				cart.text(cartNum)
-
 				var productId = $(this).closest('div.single-products').attr('id')
 				var img = $(this).closest('div.single-products').find('img').attr('src')
 				var price = $('div#' + productId).find('.productinfo').find('h2').text()
@@ -1176,12 +1189,8 @@
 						'qty': 1
 					})
 				}
-
 				localStorage.setItem('objCha', JSON.stringify(objCha))
 			})
-			// get cart
-			var objCha = localStorage.getItem('objCha')
-
 		})
 	</script>
 

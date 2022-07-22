@@ -558,7 +558,11 @@
 						+ '</tr>'
 				})
 
-				cart.text(cartNum)
+				if (cartNum > 0) {
+					cart.text(cartNum)
+				} else {
+					cart.text('')
+				}
 				// finalTotal
 				finalSpan.innerHTML = '$' + finalTotal
 
@@ -579,7 +583,11 @@
 					total.text(price * qty)
 
 					cartNum++
-					cart.text(cartNum)
+					if (cartNum > 0) {
+						cart.text(cartNum)
+					} else {
+						cart.text('')
+					}
 					finalTotal += price
 					finalSpan.innerHTML = '$' + finalTotal
 
@@ -611,7 +619,11 @@
 					}
 
 					cartNum--
-					cart.text(cartNum)
+					if (cartNum > 0) {
+						cart.text(cartNum)
+					} else {
+						cart.text('')
+					}
 					finalTotal -= price
 					finalSpan.innerHTML = '$' + finalTotal
 
@@ -627,7 +639,11 @@
 					price = parseInt(price.slice(1))
 
 					cartNum -= qty
-					cart.text(cartNum)
+					if (cartNum > 0) {
+						cart.text(cartNum)
+					} else {
+						cart.text('')
+					}
 					finalTotal -= (price * qty)
 					finalSpan.innerHTML = '$' + finalTotal
 
