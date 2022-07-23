@@ -1,30 +1,16 @@
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Link
-} from 'react-router-dom';
-
-import Header from './Header'
 import Topbar from './Topbar'
+import Header from './Header'
 import Footer from './Footer'
-import Home from './Home'
-import Cart from './Cart'
-import Login from './Login'
 
-function App() {
+function App(props) {
 
   return (
-    <Router>
+    <div>
       <Topbar />
       <Header />
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/cart' element={<Cart />} />
-        <Route path='/login' element={<Login />} />
-      </Routes>
+      {props.children}
       <Footer />
-    </Router>
+    </div>
   )
 }
 
