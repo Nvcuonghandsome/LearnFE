@@ -21,6 +21,15 @@ import Warning from './Warning';
 import Lists from './List_and_Key';
 import A from './A';
 import C from './C';
+import Form from './Form';
+import Validate1 from './ValidateForm';
+import Validate2 from './ValidateForm2';
+import Register from './Register';
+import LoginMyRegister from './LoginMyRegister';
+import AxiosGet from './AxiosGet';
+import AxiosPost from './AxiosPost';
+import AxiosDelete from './AxiosDelete';
+import AxiosBai1 from './AxiosBai1';
 
 let messages = ['React', 'HTML', 'CSS', 'JS']
 let numbers = [1, 2, 3, 4, 5]
@@ -42,6 +51,15 @@ root.render(
           <Route path='/listandkey' element={<Lists numbers={numbers} />} />
           <Route path='/a' element={<A />} />
           <Route path='/c' element={<C />} />
+          <Route path='/form' element={<Form />} />
+          <Route path='validate1' element={<Validate1 />} />
+          <Route path='validate2' element={<Validate2 />} />
+          <Route path='/register' element={<Register />} />
+          <Route path='/loginmyregister' element={<LoginMyRegister />} />
+          <Route path='/axiosget' element={<AxiosGet />} />
+          <Route path='/axiospost' element={<AxiosPost />} />
+          <Route path='/axiosdelete' element={<AxiosDelete />} />
+          <Route path='/axiosbai1' element={<AxiosBai1 />} />
         </Routes>
       </App>
     </Router>
