@@ -30,6 +30,7 @@ import AxiosGet from './AxiosGet';
 import AxiosPost from './AxiosPost';
 import AxiosDelete from './AxiosDelete';
 import AxiosBai1 from './AxiosBai1';
+import AxiosBai2A from './AxiosBai2A';
 
 let messages = ['React', 'HTML', 'CSS', 'JS']
 let numbers = [1, 2, 3, 4, 5]
@@ -60,6 +61,7 @@ root.render(
           <Route path='/axiospost' element={<AxiosPost />} />
           <Route path='/axiosdelete' element={<AxiosDelete />} />
           <Route path='/axiosbai1' element={<AxiosBai1 />} />
+          <Route path='/axiosbai2a' element={<AxiosBai2A />} />
         </Routes>
       </App>
     </Router>

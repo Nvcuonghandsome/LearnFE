@@ -1,28 +1,18 @@
 
 function AxiosBai2B(props) {
     const { data } = props
-    function renderData() {
-        if (data.length > 0) {
-            return data.map((value, index) => {
-                return <li key={index}>
-                    <p>ID: {value[id]}</p>
-                    <p>Name: {value[name]}</p>
-                    <p>Username: {value[username]}</p>
-                    <p>Email: {value[email]}</p>
-                    <p>Street: {value[address][street]}</p>
-                    <p>Suite: {value[address][suite]}</p>
-                    <p>Phone: {value[phone]}</p>
-                    <p>Website: {value[website]}</p>
-                    <p>Company name: {value[company][name]}</p>
-                    <p>Company catchPhrase: {value[company][catchPhrase]}</p>
-                </li>
-            })
-        }
-    }
-
     return (
         <div>
-            {renderData()}
+            <p>ID: {data.id}</p>
+            <p>Name: {data.name}</p>
+            <p>Username: {data.username}</p>
+            <p>Email: {data.email}</p>
+            {/* <p>Street: {data.address.street}</p> */}
+            {/* <p>Suite: {data.address.suite}</p> */}
+            <p>Phone: {data.phone}</p>
+            <p>Website: {data.website}</p>
+            {/* <p>Company name: {data.company.name}</p> */}
+            {/* <p>Company catchPhrase: {data.company.catchPhrase}</p> */}
         </div>
     )
 }
